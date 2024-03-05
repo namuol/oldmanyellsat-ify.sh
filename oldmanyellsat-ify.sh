@@ -14,7 +14,7 @@ if ! command -v convert &> /dev/null; then
 fi
 
 # Ensure correct number of arguments
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 2 ]; then
     usage
     exit 1
 fi
@@ -24,7 +24,7 @@ image_A="$1"
 image_B="./old-man-yells-at-.png"
 
 # Output image
-output_image="$3"
+output_image="$2"
 
 width_A=57
 height_A=57
